@@ -1,5 +1,5 @@
 {
-  "name": "pkg-name",
+  "name": "nogi",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.9.0",
@@ -7,12 +7,12 @@
   "author": "Akashi Sai <akashi_sai@163.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/akashigakki",
-  "homepage": "https://github.com/akashigakki/pkg-name#readme",
+  "homepage": "https://github.com/akashigakki/nogi#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akashigakki/pkg-name.git"
+    "url": "git+https://github.com/akashigakki/nogi.git"
   },
-  "bugs": "https://github.com/akashigakki/pkg-name/issues",
+  "bugs": "https://github.com/akashigakki/nogi/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -51,6 +51,7 @@
     "@antfu/ni": "^0.17.2",
     "@antfu/utils": "^0.5.2",
     "@types/node": "^18.7.5",
+    "axios": "^0.27.2",
     "bumpp": "^8.2.1",
     "eslint": "^8.22.0",
     "esno": "^0.16.3",
