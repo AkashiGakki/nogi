@@ -1,9 +1,9 @@
-export const osu = [
+export const fifthOsu = [
   'nagi', 'teresa', 'sastuki', 'sakura', 'aruno', 'naonao',
   'miku', 'mao', 'iroha', 'aya', 'hina',
 ]
 
-export const member = [{
+export const fifthMember = [{
   id: '05-01',
   name: 'YiNoUe NaGi',
   nickname: 'nagi',

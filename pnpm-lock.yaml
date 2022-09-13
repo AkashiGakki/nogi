@@ -8,6 +8,7 @@ importers:
       '@antfu/ni': ^0.17.2
       '@antfu/utils': ^0.5.2
       '@types/node': ^18.7.5
+      '@use-kit/functions': ^0.0.1
       axios: ^0.27.2
       bumpp: ^8.2.1
       eslint: ^8.22.0
@@ -23,6 +24,7 @@ importers:
       '@antfu/ni': 0.17.2
       '@antfu/utils': 0.5.2
       '@types/node': 18.7.5
+      '@use-kit/functions': 0.0.1
       axios: 0.27.2
       bumpp: 8.2.1
       eslint: 8.22.0
@@ -743,6 +745,12 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
+  /@use-kit/functions/0.0.1:
+    resolution: {integrity: sha512-EZg/FUp/8Ra5ARIyOZactrnbl2K8ehP3mevrRk+l9xMgUiJpNTcmWZTKhjrWIF4A4UHkxcw6FfxdDFfOqRKzmQ==}
+    dependencies:
+      dayjs: 1.11.5
+    dev: true
+
   /acorn-jsx/5.3.2_acorn@8.8.0:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -1049,6 +1057,10 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+    dev: true
+
+  /dayjs/1.11.5:
+    resolution: {integrity: sha512-CAdX5Q3YW3Gclyo5Vpqkgpj8fSdLQcRuzfX6mC6Phy0nfJ0eGYOeS7m4mt2plDWLAtA4TqTakvbboHvUxfe4iA==}
     dev: true
 
   /debug/2.6.9:
