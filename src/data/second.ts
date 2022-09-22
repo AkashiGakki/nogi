@@ -53,6 +53,7 @@ export const secondGraduated = [{
 }, {
   id: '02-06',
   use: 'itou junna',
+  nickname: 'junna',
   age: getAge('1998/11/30'),
   height: 166,
   active: false,
@@ -82,6 +83,7 @@ export const secondGraduated = [{
   use: 'sagara iori',
   nickname: 'iori',
   age: getAge('1997/11/26'),
+  height: 164,
   active: false,
 }, {
   id: '02-12',
@@ -91,7 +93,6 @@ export const secondGraduated = [{
   height: 154,
   active: false,
 }, {
-
   id: '02-13',
   use: 'yonetoku kyoka',
   nickname: 'kyoka',
@@ -106,3 +107,5 @@ export const secondGraduated = [{
   height: -Infinity,
   active: false,
 }]
+
+export const cateSecond = secondMember.concat(secondGraduated)

@@ -243,3 +243,5 @@ export const firstGraduated = [{
   height: -Infinity,
   active: false,
 }]
+
+export const cateFirst = firstMember.concat(firstGraduated)

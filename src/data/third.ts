@@ -93,3 +93,5 @@ export const thirdGraduated = [{
   height: 156,
   active: false,
 }]
+
+export const cateThird = thirdMember.concat(thirdGraduated)

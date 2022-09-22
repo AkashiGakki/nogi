@@ -85,3 +85,5 @@ export const fifthMember = [{
 }]
 
 export const fifthGraduated = []
+
+export const cateFifth = fifthMember.concat(fifthGraduated)

@@ -121,3 +121,5 @@ export const fourthMember = [{
 }]
 
 export const fourthGraduated = []
+
+export const cateFourth = fourthMember.concat(fourthGraduated)
