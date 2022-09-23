@@ -100,7 +100,6 @@ export const firstGraduated = [{
   age: getAge('1996/04/13'),
   height: 161,
   active: false,
-
 }, {
   id: '01-14',
   use: 'fukagawa mai',
@@ -166,7 +165,7 @@ export const firstGraduated = [{
   active: false,
 }, {
   id: '01-23',
-  use: 'woda maaya',
+  use: 'wada maaya',
   nickname: 'maaya',
   age: getAge('1998/04/23'),
   height: 160,
