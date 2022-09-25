@@ -3,6 +3,13 @@ import { getAllMember } from "../src"
 
 describe('should', () => {
   it('exported', () => {
-    expect(getAllMember().length).toEqual(86)
+    expect(getAllMember()).toHaveLength(86)
+    expect(getAllMember(['name']).slice(0, 1)).toMatchInlineSnapshot(`
+      [
+        {
+          "name": "齋藤 飛鳥",
+        },
+      ]
+    `)
   })
 })
