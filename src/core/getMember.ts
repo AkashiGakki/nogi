@@ -1,4 +1,4 @@
-import { MergeType } from './type'
+import type { MergeType } from './type'
 import { getAllMember } from '.'
 
 export function getMember(unique: string, type: MergeType = 'default') {

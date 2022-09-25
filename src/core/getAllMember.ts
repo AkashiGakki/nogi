@@ -3,8 +3,9 @@ import { getObjectField } from '@use-kit/functions'
 import { cateFifth, cateFirst, cateFourth, cateSecond, cateThird } from '../data'
 import { mergeMemberList, uniqueStringList } from '../utils'
 import { allMemberField, memberField } from '../config'
-import { MergeType } from './type'
 import member from '../json/member.json'
+
+import type { MergeType } from './type'
 
 export function getAllMember(filters: string[] = [], type: MergeType = 'default') {
   filters = getFiltersByType(filters, type)
