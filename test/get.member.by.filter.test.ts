@@ -1,4 +1,4 @@
-import { describe, expect, it, should } from 'vitest'
+import { describe, expect, it } from 'vitest'
 
 import { cateFifth, cateFirst, cateFourth, cateSecond, cateThird } from '../src/data'
 import { getMemberByFilter } from '../src/core/getMemberByFilter'

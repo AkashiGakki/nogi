@@ -1,8 +1,7 @@
+import type { MergeType } from './type'
 import { getAllMember } from '.'
 
-import type { MergeType } from './type'
-
-export function getMemberByFilter( callback: Function, fields: string[] = [], type: MergeType = 'default') {
+export function getMemberByFilter(callback: Function, fields: string[] = [], type: MergeType = 'default') {
   return getAllMember(fields, type).filter(m => callback(m))
 }
 
