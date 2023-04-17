@@ -1,7 +1,7 @@
 {
-  "name": "nogi",
+  "name": "nogi-api",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha.1",
   "packageManager": "pnpm@7.9.0",
   "description": "",
   "author": "Akashi Sai <akashi_sai@163.com>",
