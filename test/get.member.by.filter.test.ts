@@ -7,6 +7,8 @@ describe('should', () => {
   it('getMemberByFilter', () => {
     const members = cateFirst.concat(cateSecond, cateThird, cateFourth, cateFifth)
 
-    expect(getMemberByFilter((m: any) => m.age < 19)).toHaveLength(members.filter(m => m.age < 19).length)
+    expect(
+      getMemberByFilter((m: { age: number }) => m.age < 19),
+    ).toHaveLength(members.filter(m => m.age < 19).length)
   })
 })
