@@ -5,18 +5,37 @@ import { mergeMemberList, uniqueStringList } from '../utils'
 import { allMemberField, memberField } from '../config'
 import member from '../json/member.json'
 
-import type { MergeType } from './type'
+import type { Member, MergeType, ObjParams, UnionParams } from './type'
 
-export function getAllMember(filters: string[] = [], type: MergeType = 'default') {
-  filters = getFiltersByType(filters, type)
+export function getAllMember(params?: UnionParams, filters: string[] = []) {
+  filters = getFilters(params, filters)
 
   const members = cateFirst.concat(cateSecond, cateThird, cateFourth, cateFifth)
   const jsonData = member.data.filter(m => m.code !== '10001')
 
-  return mergeMemberList(members, jsonData).map(m => getObjectField(m as any, filters))
+  return mergeMemberList(members, jsonData).map((m: Member) => getObjectField(m, filters))
 }
 
-function getFiltersByType(filters: string[], type: MergeType) {
+function getFilters(params?: UnionParams, filters: string[] = []) {
+  if (Object.prototype.toString.call(params) === '[object Object]') {
+    const obj = params as ObjParams
+    return getFiltersByType(obj.type, obj.filters)
+  }
+
+  if (Array.isArray(params)) {
+    const arr = params as string[]
+    return getFiltersByType('default', arr)
+  }
+
+  if (Object.prototype.toString.call(params) === '[object String]') {
+    const type = params as MergeType
+    return getFiltersByType(type, filters)
+  }
+
+  return getFiltersByType()
+}
+
+function getFiltersByType(type: MergeType = 'default', filters: string[] = []) {
   if (filters.length && type === 'default')
     type = 'use'
 
