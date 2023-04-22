@@ -5,11 +5,11 @@ interface MemberProps {
   age: number
   use: string // 罗马音
   nickname: string
-  // fullname: string;
+  // zhname: string;
   height: number
   active: boolean
 
-  // default
+  // preset
   code: string
   name: string
   english_name: string

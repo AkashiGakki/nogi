@@ -73,6 +73,25 @@ describe('should', () => {
         },
       ]
     `)
+
+    expect(getAllMember('merge', ['active', 'zhname']).slice(2, 3)).toMatchInlineSnapshot(`
+      [
+        {
+          "active": false,
+          "age": 28,
+          "birthday": "1994/05/25",
+          "blood": "O型",
+          "cate": "1期生",
+          "code": "273",
+          "height": 159,
+          "id": "01-02",
+          "kana": "にしの ななせ",
+          "name": "西野 七瀬",
+          "nickname": "nanase",
+          "use": "nishino nanase",
+        },
+      ]
+    `)
   })
 
   it('getAllMember(params: ObjParams)', () => {
@@ -82,6 +101,50 @@ describe('should', () => {
       [
         {
           "name": "齋藤 飛鳥",
+        },
+      ]
+    `)
+
+    expect(getAllMember({ filters: ['name']}).slice(2, 3)).toMatchInlineSnapshot(`
+      [
+        {
+          "name": "西野 七瀬",
+        },
+      ]
+    `)
+
+    expect(getAllMember({ type: 'default' }).slice(4, 5)).toMatchInlineSnapshot(`
+      [
+        {
+          "age": 30,
+          "birthday": "1992/08/20",
+          "blood": "A型",
+          "cate": "1期生",
+          "code": "268",
+          "height": 162,
+          "id": "01-04",
+          "kana": "しらいし まい",
+          "name": "白石 麻衣",
+          "nickname": "mai",
+          "use": "shiraishi mai",
+        },
+      ]
+    `)
+
+    expect(getAllMember({}).slice(3, 4)).toMatchInlineSnapshot(`
+      [
+        {
+          "age": 30,
+          "birthday": "1993/02/20",
+          "blood": "B型",
+          "cate": "1期生",
+          "code": "275",
+          "height": 163,
+          "id": "01-03",
+          "kana": "はしもと ななみ",
+          "name": "橋本 奈々未",
+          "nickname": "nanami",
+          "use": "hashimoto nanami",
         },
       ]
     `)
