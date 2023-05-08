@@ -105,7 +105,7 @@ describe('should', () => {
       ]
     `)
 
-    expect(getAllMember({ filters: ['name']}).slice(2, 3)).toMatchInlineSnapshot(`
+    expect(getAllMember({ filters: ['name'] }).slice(2, 3)).toMatchInlineSnapshot(`
       [
         {
           "name": "西野 七瀬",
