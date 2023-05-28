@@ -46,7 +46,7 @@ describe('should', () => {
   })
 
   it('getMember(params)', () => {
-    expect(getMember({ unique: 'shiori', type: 'use', filters: ['nickname', 'name']})).toMatchInlineSnapshot(`
+    expect(getMember({ unique: 'shiori', type: 'use', filters: ['nickname', 'name'] })).toMatchInlineSnapshot(`
       {
         "name": "久保 史緒里",
         "nickname": "shiori",
