@@ -1,7 +1,6 @@
 import { isObject, isString } from '@use-kit/functions'
+import type { MergeType } from './type'
 import { getAllMember } from '.'
-
-import type { MergeType, Member } from './type'
 
 // export function getMember(unique: string, type: MergeType = 'default') {
 //   return getAllMember(type, []).find(
@@ -32,9 +31,9 @@ function filterCallback(members: any[], unique: string) {
 export function getMember(
   params: string | Params,
   type: MergeType = 'default',
-  filters: string[] = []
+  filters: string[] = [],
 ) {
-  let unique: string = ''
+  let unique = ''
   let members: any[] = []
 
   if (isString(params)) {
