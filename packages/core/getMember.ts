@@ -1,6 +1,6 @@
 import { isObject, isString } from '@use-kit/functions'
 import type { MergeType } from './type'
-import { getAllMember } from '.'
+import { getAllMember } from './getAllMember'
 
 // export function getMember(unique: string, type: MergeType = 'default') {
 //   return getAllMember(type, []).find(

@@ -1,9 +1,11 @@
 import { getObjectField } from '@use-kit/functions'
 
-import { allMemberField, memberField } from '../config'
+import { allMemberField, memberField } from './config'
 import { mergeMemberList, uniqueStringList } from './utils'
 
 import type { Member, MergeType, ObjParams, UnionParams } from './type'
+
+let members: Partial<Member[]> = []
 
 export function getAllMember(params?: UnionParams, filters: string[] = []) {
   return []
