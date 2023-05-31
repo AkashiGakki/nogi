@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getAllMember } from '../src'
+import { getAllMember } from '../..'
 
 describe('should', () => {
   it('getAllMember', () => {

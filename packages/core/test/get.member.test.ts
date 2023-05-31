@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { getObjectField } from '@use-kit/functions'
 
-import { getMember } from '../src'
-import type { Member } from '../src/core/type'
+import { getMember } from '../..'
+import type { Member } from '../type'
 
 describe('should', () => {
   it('getMember(unique: string)', () => {

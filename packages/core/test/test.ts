@@ -1,5 +1,5 @@
-import { fifthOsu, firstOsu, fourthOsu, secondOsu, thirdOsu } from '../src/data'
-import { getDuplicatedValue } from '../src/utils'
+import { fifthOsu, firstOsu, fourthOsu, secondOsu, thirdOsu } from '../packages/data'
+import { getDuplicatedValue } from '../utils'
 
 const list = firstOsu.concat(secondOsu, thirdOsu, fourthOsu, fifthOsu)
 const ret = getDuplicatedValue(list)
