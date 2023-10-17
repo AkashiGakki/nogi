@@ -5,7 +5,7 @@ import { mergeMemberList, uniqueStringList } from './utils'
 
 import type { Member, MergeType, ObjParams, UnionParams } from './type'
 
-let members: Partial<Member[]> = []
+const members: Partial<Member[]> = []
 
 export function getAllMember(params?: UnionParams, filters: string[] = []) {
   return []
