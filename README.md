@@ -20,7 +20,7 @@ const use = nogi.getMember('asuka') // nike name
 const use = nogi.getMember('saito asuka') // full name
 const use = nogi.getMember('shiori', 'all') // filter
 const use = nogi.getMember('shiori', 'use', ['id', 'name', 'age'])
-const use = nogi.getMember({ unique: 'nagi', type: 'merge', filter: ['active']})
+const use = nogi.getMember({ unique: 'nagi', type: 'merge', filter: ['active'] })
 ```
 
 ## License
